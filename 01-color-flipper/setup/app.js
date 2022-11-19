@@ -6,4 +6,9 @@ const btn = document.querySelector('#btn');
 btn.addEventListener('click', (e) => {
   e.preventDefault();
   body.style.backgroundColor = color;
+  randomNumber
 })
+
+const randomNumber = () => {
+  Math.floor(Math.random() * colors);
+}
