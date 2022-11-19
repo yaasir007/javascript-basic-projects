@@ -10,6 +10,12 @@ btn.addEventListener("click", function () {
   color.textContent = colors[randomNumber];
 });
 
-function getRandomNumber() {
-  return Math.floor(Math.random() * colors.length);
+// function getRandomNumber() {
+//   return Math.floor(Math.random() * colors.length);
+// }
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
+
+console.log(getRandomInt(5));

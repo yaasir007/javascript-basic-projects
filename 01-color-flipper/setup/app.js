@@ -5,10 +5,9 @@ const btn = document.querySelector('#btn');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
-  body.style.backgroundColor = color;
-  randomNumber
+  body.style.backgroundColor = colors[getRandom()];
 })
 
-const randomNumber = () => {
-  Math.floor(Math.random() * colors);
+function getRandom() {
+  return Math.floor(Math.random() * colors.length);
 }
