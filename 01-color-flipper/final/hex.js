@@ -6,6 +6,7 @@ btn.addEventListener("click", function () {
   let hexColor = "#";
   for (let i = 0; i < 6; i++) {
     hexColor += hex[getRandomNumber()];
+    debugger
   }
   // console.log(hexColor);
 
